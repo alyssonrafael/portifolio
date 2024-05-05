@@ -18,16 +18,16 @@ const Pag1 = () => {
   };
 
   return (
-    <div
+    <div id="pag1"
       className={`text-${
         theme === "light" ? "gray-800" : "white"
-      } text-1xl md:text-2xl flex justify-center items-center h-screen`}
+      } text-1xl md:text-2xl flex justify-center items-center h-screen  my-16 md:my-0`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px6 md:px-8">
+      <div className="max-w-6xl mx-auto md:px-8">
         <div className="md:flex md:justify-between md:space-x-2 font-sans ">
           <div className="md:flex-1 md:space-y-5 text-center lg:text-left">
             <div className="space-y-2 w-5/6 mx-auto">
-              <div className="font-serif md:text-5xl transition-opacity duration-500 text-3xl items-center">
+              <div className="font-serif md:text-5xl transition-opacity duration-500 text-3xl items-center pt-16">
                 <h1 className="md:text-5xl">HI there, I am Alysson</h1>
                 <TypeAnimation
                   sequence={[
@@ -89,7 +89,7 @@ const Pag1 = () => {
             </div>
           </div>
 
-          <div className="md:flex-1 w-full md:w-auto items-center justify-center">
+          <div className="md:flex-1 w-full md:w-auto items-center justify-center flex p-12 md:pt-0 ">
             <div className="transition-transform duration-500 ease-in-out transform hover:scale-110">
               {getAvatarComponent()}
             </div>
