@@ -36,6 +36,7 @@ const Navbar2 = () => {
             <div className="ml-4 flex items-center justify-center space-x-6">
               <a href="#pag1" onClick={() => scrollToSection("pag1")} className="hover:text-yellow-800 dark:hover:text-purple-600 transition-colors duration-300">Home</a>
               <a href="#how-iam" onClick={() => scrollToSection("how-iam")} className="hover:text-yellow-800 dark:hover:text-purple-600 transition-colors duration-300">Sobre</a>
+              <a href="#Technologies " onClick={() => scrollToSection("tech")} className="hover:text-yellow-800 dark:hover:text-purple-600 transition-colors duration-300">Technologies </a>
               <a href="#projetos" onClick={() => scrollToSection("projetos")} className="hover:text-yellow-800 dark:hover:text-purple-600 transition-colors duration-300">Projetos</a>
               <a href="#contato" onClick={() => scrollToSection("contato")} className="hover:text-yellow-800 dark:hover:text-purple-600 transition-colors duration-300">Contato</a>
             </div>
@@ -77,6 +78,7 @@ const Navbar2 = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-2 border-black dark:border-white">
             <a href="#pag1" onClick={() => scrollToSection("pag1")} className="pl-1 block hover:bg-gray-300 hover:text-yellow-800 dark:hover:bg-gray-900 dark:hover:text-purple-600 rounded-lg">Home</a>
             <a href="#how-iam" onClick={() => scrollToSection("how-iam")} className="pl-1 block hover:bg-gray-300 hover:text-yellow-800 dark:hover:bg-gray-900 dark:hover:text-purple-600 rounded-lg">Sobre</a>
+            <a href="#Technologies " onClick={() => scrollToSection("tech")} className="hover:text-yellow-800 dark:hover:text-purple-600 transition-colors duration-300">Technologies </a>
             <a href="#projetos" onClick={() => scrollToSection("projetos")} className="pl-1 block hover:bg-gray-300 hover:text-yellow-800 dark:hover:bg-gray-900 dark:hover:text-purple-600 rounded-lg">Projetos</a>
             <a href="#contato" onClick={() => scrollToSection("contato")} className="pl-1 block hover:bg-gray-300 hover:text-yellow-800 dark:hover:bg-gray-900 dark:hover:text-purple-600 rounded-lg">Contato</a>
           </div>

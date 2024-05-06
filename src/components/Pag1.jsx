@@ -27,7 +27,7 @@ const Pag1 = () => {
         <div className="md:flex md:justify-between md:space-x-2 font-sans ">
           <div className="md:flex-1 md:space-y-5 text-center lg:text-left">
             <div className="space-y-2 w-5/6 mx-auto">
-              <div className="font-serif md:text-5xl transition-opacity duration-500 text-3xl items-center pt-16">
+              <div className="font-serif md:text-4xl transition-opacity duration-500 text-3xl items-center pt-16">
                 <h1 className="md:text-5xl">HI there, I am Alysson</h1>
                 <TypeAnimation
                   sequence={[
