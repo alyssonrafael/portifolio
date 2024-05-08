@@ -3,6 +3,7 @@ import Navbar2 from "@/components/Navbar2";
 import Pag1 from "@/components/Pag1";
 import Technologies from "@/components/Technologies";
 import Projects from "@/components/Projects";
+import Paginafinal from "@/components/Paginafinal";
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
     <HowIam/>
     <Technologies/>
     <Projects/>
+    <Paginafinal/>
     </main>
   );
 }
