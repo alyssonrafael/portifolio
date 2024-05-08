@@ -4,13 +4,13 @@ import { MdEmail } from "react-icons/md";
 import Sendemail from "./Sendemail";
 
 const Paginafinal = () => {
+
   const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      window.scrollTo({
-        top: section.offsetTop,
-        behavior: "smooth",
-      });
+    if (typeof window !== "undefined") {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 
@@ -55,7 +55,7 @@ const Paginafinal = () => {
               <div className="lg:flex align-bottom mx-auto hidden md:widden pt-4">
                 <a
                   href="#pag1"
-                  onClick={() => scrollToSection("pag1")}
+                  onClick={(e) => {e.preventDefault(), scrollToSection("pag1")}}
                   className="text-4xl hover:text-yellow-800 dark:hover:text-purple-600 transition-colors duration-300"
                 >
                   <FaArrowCircleUp />

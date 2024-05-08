@@ -18,12 +18,11 @@ const Pag1 = () => {
   };
 
   const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      window.scrollTo({
-        top: section.offsetTop,
-        behavior: "smooth",
-      });
+    if (typeof window !== "undefined") {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 
@@ -66,10 +65,13 @@ const Pag1 = () => {
               </div>
               <div className="w-full mx-auto">
                 <a
-                  href="/"
+                  href="#projetos"
+                  onClick={(e) => {
+                    e.preventDefault(), scrollToSection("projetos");
+                  }}
                   className="underline cursor-pointer inline-flex items-center transition-transform duration-300 ease-in-out transform hover:translate-x-2"
                 >
-                  Navigate to projects{" "}
+                  Navigate to projects
                   <FaArrowRight className="pl-3 text-3xl w-8 h-8" />
                 </a>
               </div>
@@ -95,7 +97,7 @@ const Pag1 = () => {
               <div className="lg:flex align-bottom mx-auto hidden md:widden">
                 <a
                  href="#how-iam"
-                 onClick={() => scrollToSection("how-iam")}
+                 onClick={(e) => {e.preventDefault() ,scrollToSection("how-iam")}}
                 >
                   
                   <FaArrowCircleDown className="text-3xl w-8 h-8 hover:text-yellow-900 dark:hover:text-purple-800 transition-transform duration-300 ease-in-out transform hover:translate-y-2" />
