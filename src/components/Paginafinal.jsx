@@ -1,6 +1,7 @@
 "use client";
 import { FaArrowCircleUp, FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import Sendemail from "./Sendemail";
 
 const Paginafinal = () => {
   const scrollToSection = (id) => {
@@ -15,13 +16,13 @@ const Paginafinal = () => {
 
   return (
     <div id="contato" className="h-screen flex flex-col justify-center">
-      <h1 className="text-center text-5xl font-serif py-24">Contact</h1>
+      <h1 className="text-center text-5xl font-serif pt-24 pb-8">Contact</h1>
       <div className="flex-grow max-w-6xl mx-auto md:px-8">
         <div className="md:flex md:justify-between md:space-x-2 font-sans">
           <div className="md:flex-1 md:space-y-5 text-center lg:text-left">
             <div className="space-y-2 w-5/6 mx-auto">
               <div className="lg:text-left">
-                <h2 className="text-semibold text-3xl pb-4">
+                <h2 className="text-semibold text-3xl md:pb-4">
                   Unleash Your Potential
                 </h2>
                 <p className="text-lg w-full mx-auto">
@@ -61,10 +62,10 @@ const Paginafinal = () => {
             </div>
           </div>
 
-          <div className="md:flex-1 w-full md:w-auto items-center justify-center p-12 md:pt-0">
+          <div className="md:flex-1 w-full md:w-auto items-center justify-center p-12 md:pt-0 text-center">
             <div className="flex flex-col items-center justify-center md:flex-row pb-8">
               <MdEmail className="text-5xl lg:mr-16 md:mr-10" />
-              <div className=" text-center">
+              <div className="text-center">
                 <h1 className="underline lg:text-lg text-base">
                   Send-me an email: <br />
                   <span className="text-xs">
@@ -74,7 +75,7 @@ const Paginafinal = () => {
               </div>
             </div>
             <div>
-              <h1>form</h1>
+              <Sendemail />
             </div>
           </div>
         </div>
