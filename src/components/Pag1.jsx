@@ -17,6 +17,16 @@ const Pag1 = () => {
     return theme === "dark" ? <Av2 /> : <Av1 />;
   };
 
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div id="pag1"
       className={`text-${
@@ -68,6 +78,7 @@ const Pag1 = () => {
                 <a
                   href="http://github.com/alyssonrafael"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-yellow-900 dark:hover:text-purple-800 transition-colors duration-300"
                 >
                   <FaGithub />
@@ -75,14 +86,18 @@ const Pag1 = () => {
                 <a
                   href="https://www.linkedin.com/in/alysson-rafael-485540290/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-yellow-900 dark:hover:text-purple-800 transition-colors duration-300"
                 >
                   <FaLinkedin />
                 </a>
               </div>
               <div className="lg:flex align-bottom mx-auto hidden md:widden">
-                <a href="#">
-                  {" "}
+                <a
+                 href="#how-iam"
+                 onClick={() => scrollToSection("how-iam")}
+                >
+                  
                   <FaArrowCircleDown className="text-3xl w-8 h-8 hover:text-yellow-900 dark:hover:text-purple-800 transition-transform duration-300 ease-in-out transform hover:translate-y-2" />
                 </a>
               </div>

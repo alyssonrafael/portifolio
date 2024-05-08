@@ -38,6 +38,7 @@ const Paginafinal = () => {
                 <a
                   href="http://github.com/alyssonrafael"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-yellow-900 dark:hover:text-purple-800 transition-colors duration-300 text-4xl"
                 >
                   <FaGithub />
@@ -45,6 +46,7 @@ const Paginafinal = () => {
                 <a
                   href="https://www.linkedin.com/in/alysson-rafael-485540290/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-yellow-900 dark:hover:text-purple-800 transition-colors duration-300 text-4xl"
                 >
                   <FaLinkedin />

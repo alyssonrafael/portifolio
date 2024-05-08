@@ -96,6 +96,7 @@ const Projects = () => {
                   <a
                     href={d.link}
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="group relative overflow-hidden bg-blue-600 dark:bg-gray-950 focus:ring-4 focus:ring-blue-300 inline-flex items-center px-7 py-2.5 rounded-lg text-white justify-center"
                   >
                     <span class="z-40">Visit Project</span>

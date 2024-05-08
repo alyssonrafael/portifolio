@@ -31,7 +31,7 @@ const Technologies = () => {
       <div className="lg:grid grid-rows-auto grid-cols-4 grid-rows-4  lg:grid-cols-12 lg:grid-rows-1 gap-4 px-4 ">
         <div className="lg:col-span-3 row-span-1 col-span-4  text-center whitespace-normal  ">
           <div className="text-lg lg:flex-column lg:justify-center space-y-4 mb-4 lg:mb-0">
-            <h1>Aplicações e dados</h1>
+            <h1>Applications & Data</h1>
             <div className="mx-2 lg:space-y-3 md:space-y-3 grid grid-cols-2 gap-4 md:block lg:block ">
               <Technologie
                 text="HTML"
@@ -133,7 +133,7 @@ const Technologies = () => {
 
         <div className="lg:col-span-3 row-span-1 col-span-4  text-center whitespace-normal">
           <div className="text-lg flex-column justify-center space-y-4 mb-4 lg:mb-0">
-            <h1>Desenvolvimento</h1>
+            <h1>Development</h1>
             <div className="mx-2 lg:space-y-3 md:space-y-3 grid grid-cols-2 gap-4 md:block lg:block ">
               <Technologie
                 text="Vscode"
