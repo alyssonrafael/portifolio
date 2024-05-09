@@ -1,17 +1,19 @@
 "use client";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import Alerta from "./Alerta";
 
 function Sendemail() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [alerta, setAlerta] = useState({ msg: "", tipo: "" });
 
   function sendemail(e) {
     e.preventDefault();
 
     if (name === "" || email === "" || message === "") {
-      alert("Fill in all fields");
+      setAlerta({ msg: "Preencha todos os campos", tipo: "erro" });
       return;
     }
 
@@ -30,17 +32,13 @@ function Sendemail() {
       )
       .then(
         (response) => {
-          {
-            /*console.log("Success: email sent", response.status, response.text) */
-          }
-
-          alert("Success: email sent ");
+          setAlerta({ msg: "Sucesso: e-mail enviado", tipo: "sucesso" });
           setName("");
           setEmail("");
           setMessage("");
         },
         (err) => {
-          console.log("ERRO:", err);
+          setAlerta({ msg: "ERRO: " + err, tipo: "erro" });
         }
       );
   }
@@ -71,12 +69,14 @@ function Sendemail() {
           value={message}
         ></textarea>
 
-        <input
+        <button
           type="submit"
-          value="Send"
           className="w-full border bg-blue-500 dark:bg-gray-900 text-white rounded-md px-4 py-2 hover:bg-blue-600 dark:hover:bg-gray-950 cursor-pointer transition duration-500 ease-in-out transform hover:scale-105 dark:hover:text-purple-600 dark:hover:border-purple-600"
-        />
+        >
+          Send
+        </button>
       </form>
+      {alerta.msg && <Alerta msg={alerta.msg} tipo={alerta.tipo} />}
     </div>
   );
 }
