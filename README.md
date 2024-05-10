@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Meu Portfólio 💼
 
-## Getting Started
+Bem-vindo ao meu portfólio! Este é um projeto feito com Next.js, utilizando diversas bibliotecas para proporcionar uma experiência visual agradável e funcionalidades avançadas. O portfólio é responsivo e inclui a capacidade de mudança de tema e envio de e-mails.
 
-First, run the development server:
+## Stack utilizada ⚙️
+
+- **Next.js**: Framework de React para construção de aplicações web.
+- **Tailwind CSS**: Biblioteca de classes utilitárias para estilização rápida e consistente.
+
+## Acesso ao Portfólio 🌐
+
+Você pode acessar o portfólio online através do link: [Meu portifolio](https://portifolio-gold-delta.vercel.app/).
+
+## Como Executar Localmente 🚀
+
+Para rodar localmente o projeto siga estas etapas:
+
+1. **Clone o repositório**:
+
+```bash
+git clone https://github.com/alyssonrafael/portifolio
+```
+
+2. **Instale as dependências**:
+
+```bash
+npm install
+```
+
+3. **Execute o servidor de desenvolvimento**:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. **Abra seu navegador e acesse** http://localhost:3000.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Aprendizados 📚
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Durante a criação deste portfólio, adquiri diversos aprendizados valiosos:
 
-## Learn More
+- **Design**: Aprendi mais sobre design de interfaces e como criar layouts atrativos e funcionais.
+- **Responsividade**: Explorei técnicas para tornar o site responsivo em diferentes dispositivos e tamanhos de tela.
+- **Next.js**: Aprofundei meu conhecimento sobre o Next.js e suas funcionalidades para construir aplicações web modernas.
+- **Planejamento de Projeto**: Percebi a importância de um planejamento prévio para evitar erros e otimizar o desenvolvimento do projeto.
 
-To learn more about Next.js, take a look at the following resources:
+## Melhorias Futuras 🔮
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Algumas melhorias que pretendo implementar no futuro incluem:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Migrar para Vite**: Considerando que o Vite oferece uma experiência de desenvolvimento mais rápida em comparação com o Next.js, pretendo migrar para o Vite para simplificar a configuração e melhorar o desempenho.
+- **Adoção do TypeScript**: Planejo iniciar o aprendizado e uso do TypeScript para adicionar tipagem estática ao código, aumentando a robustez e a manutenibilidade, além de melhorar a experiência de desenvolvimento.
+- **Mudança de Idioma Integrada**: Pretendo adicionar suporte para múltiplos idiomas na aplicação para alcançar um público mais amplo.
 
-## Deploy on Vercel
+## Licença 📝
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[MIT](https://choosealicense.com/licenses/mit/)
