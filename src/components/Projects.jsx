@@ -62,13 +62,13 @@ const Projects = () => {
   };
 
   return (
-    <div id="projetos" className="m-auto max-w-full-lg pt-16 px-4 min-h-screen">
+    <div id="projetos" className="min-h-screen flex flex-col justify-center">
       <div className="w-full">
-        <div className="flex justify-center mb-8">
-          <div className="text-center lg:text-5xl font-serif text-4xl">
+        
+          <div className="text-center lg:text-5xl font-serif text-4xl mb-8 pt-16 lg:pt-0 md:pt-0">
             My Projects
           </div>
-        </div>
+        
         <div className="my-12 mx-10">
           <Slider {...settings}>
             {data.map((d) => (

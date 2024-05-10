@@ -21,14 +21,14 @@ import Technologie from "./technologie";
 
 const Technologies = () => {
   return (
-    <div id="tech" className="container mx-auto max-w-screen-lg pt-16 min-h-screen">
+    <div id="tech" className="flex flex-col justify-center items-center min-h-screen">
       <div className="flex justify-center mb-8">
-        <div className="text-center lg:text-5xl font-serif text-4xl">
+        <div className="text-center lg:text-5xl font-serif text-4xl lg:pb-16 pt-16 lg:pt-0">
           Technologies & Tools
         </div>
       </div>
 
-      <div className="lg:grid grid-rows-auto grid-cols-4 grid-rows-4  lg:grid-cols-12 lg:grid-rows-1 gap-4 px-4 ">
+      <div className="lg:grid grid-rows-auto grid-cols-4 grid-rows-4  lg:grid-cols-12 lg:grid-rows-1 gap-4 w-4/5">
         <div className="lg:col-span-3 row-span-1 col-span-4  text-center whitespace-normal  ">
           <div className="text-lg lg:flex-column lg:justify-center space-y-4 mb-4 lg:mb-0">
             <h1>Applications & Data</h1>

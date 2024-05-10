@@ -30,7 +30,7 @@ const Pag1 = () => {
     <div id="pag1"
       className={`text-${
         theme === "light" ? "gray-800" : "white"
-      } text-1xl md:text-2xl flex justify-center items-center h-screen  my-16 md:my-0`}
+      } text-1xl md:text-2xl flex justify-center items-center h-screen pt-16 md:my-0`}
     >
       <div className="max-w-6xl mx-auto md:px-8">
         <div className="md:flex md:justify-between md:space-x-2 font-sans ">
@@ -106,7 +106,7 @@ const Pag1 = () => {
             </div>
           </div>
 
-          <div className="md:flex-1 w-full md:w-auto items-center justify-center flex p-12 md:pt-0 ">
+          <div className="md:flex-1 w-full md:w-auto items-center justify-center flex px-12 md:pt-0 ">
             <div className="transition-transform duration-500 ease-in-out transform hover:scale-110">
               {getAvatarComponent()}
             </div>
