@@ -1,6 +1,6 @@
 "use client";
 import { useTheme } from "next-themes";
-import Av1 from "./av1";
+import Av1 from "./Av1";
 import Av2 from "./Av2";
 import {
   FaArrowRight,

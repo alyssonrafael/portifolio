@@ -17,7 +17,7 @@ import { GrMysql } from "react-icons/gr";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { SiSqlite, SiPostman } from "react-icons/si";
 import { VscVscodeInsiders } from "react-icons/vsc";
-import Technologie from "./technologie";
+import Technologie from "./Technologie";
 
 const Technologies = () => {
   return (
