@@ -7,22 +7,24 @@ function Sendemail() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [alerta, setAlerta] = useState({ msg: "", tipo: "" });
+  const [alerta, setAlerta] = useState({ msg: "", tipo: "", key: Date.now() });
 
   function sendemail(e) {
     e.preventDefault();
 
+    setAlerta({ msg: "", tipo: "", key: Date.now() });
+  
     if (name === "" || email === "" || message === "") {
-      setAlerta({ msg: "Preencha todos os campos", tipo: "erro" });
+      setAlerta({ msg: "Preencha todos os campos", tipo: "erro", key:Date.now() });
       return;
     }
-
+  
     const templateParams = {
       from_name: name,
       message: message,
       email: email,
     };
-
+  
     emailjs
       .send(
         "service_edsgycq",
@@ -32,15 +34,16 @@ function Sendemail() {
       )
       .then(
         (response) => {
-          setAlerta({ msg: "Sucesso: e-mail enviado", tipo: "sucesso" });
+          setAlerta({ msg: "Sucesso: e-mail enviado", tipo: "sucesso", key: Date.now() });
           setName("");
           setEmail("");
           setMessage("");
         },
         (err) => {
-          setAlerta({ msg: "ERRO: " + err, tipo: "erro" });
+          setAlerta({ msg: "ERRO: " + err, tipo: "erro", key: Date.now() });
         }
       );
+
   }
 
   return (
@@ -76,7 +79,7 @@ function Sendemail() {
           Send
         </button>
       </form>
-      {alerta.msg && <Alerta msg={alerta.msg} tipo={alerta.tipo} />}
+      {alerta.msg && <Alerta msg={alerta.msg} tipo={alerta.tipo} key={alerta.key} />}
     </div>
   );
 }

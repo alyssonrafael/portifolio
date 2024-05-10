@@ -1,21 +1,17 @@
 import { useState, useEffect } from "react";
 
-function Alerta({ msg, tipo }) {
+function Alerta({ msg, tipo, key }) { //definindo atmbem o key para que sempre que clicar o estado ser alterado fazendo assim renderizar novamente
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    let timer;
-
     if (msg) {
       setVisible(true);
-
-      timer = setTimeout(() => {
+      const timer = setTimeout(() => {
         setVisible(false);
       }, 3000);
+      return () => clearTimeout(timer);
     }
-
-    return () => clearTimeout(timer);
-  }, [msg]);
+  }, [msg, key]); 
 
   const alertColor = tipo === 'sucesso' ? 'bg-green-500' : 'bg-red-500';
 
@@ -23,7 +19,7 @@ function Alerta({ msg, tipo }) {
     <>
       {visible && (
         <div
-          className={`p-4 text-white ${alertColor} rounded fixed bottom-0 right-0 m-4`}
+          className={`p-4 text-white ${alertColor} rounded fixed top-16 right-0 m-4`}
         >
           {msg}
         </div>
